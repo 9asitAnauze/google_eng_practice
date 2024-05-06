@@ -8,6 +8,8 @@
     * [功能修改](#function_change)
     * [重构](#refactoring)
     * [需要一些上下文的小 CL](#small_cl_context)
+    * [使用标签](#tags)
+    * [自动生成的 CL 描述](#generated_cl_descriptions)
 *   [提交 CL 之前审核描述](#review_before_submit)
 
 CL 描述是一项公开的记录，其内容包含修改了 **什么** 与 **为什么** 这么修改。 虽然你的 CL 只是在你与审核者之间发生，但它是版本控制历史的一部分，若干年之后，很有可能会有成百上千的人阅读。
@@ -79,6 +81,58 @@ CL 描述的 **第一行** 应该是一句简短的描述，用以说明 *CL做�
 >
 
 第一句话描述做了什么，其他部分解释 *为什么* 要这么修改，并向审核者提供了不少额外的上下文信息。
+
+### 使用标签 <a id="tags"></a>
+
+标签是手动输入的，目的是便于对 CL 进行分类。 工具可能支持标签，或者根据团队习惯使用标签。
+
+例如：
+* "[tag]"
+* "[a longer tag]"
+* "#tag"
+* "tag:"
+
+使用标签是可选的。
+
+当添加标签时，考虑是否要把标签添加到 [CL 描述内容](#informative)中，或[第一行](#first-line)中，以便把它与内容区分开来。 
+
+以下是有标签和没有标签的例子：
+
+``` {.good}
+好的标签样例
+
+// 第一行中的标签保持简短。
+[banana] Peel the banana before eating.
+
+// 标签可以内嵌在内容中。
+Peel the #banana before eating.
+
+// 标签是可选的。
+Peel the banana before eating.
+
+// 如果能保证简短，多个标签也是可接受的。
+#banana #apple: Assemble a fruit basket.
+
+// 标签可以放在 CL 描述中的任何位置。
+> Assemble a fruit basket.
+>
+> #banana #apple
+```
+
+``` {.bad}
+不好的标签样例
+
+// 在第一行中包含太多标签（或标签太长）。
+//
+// 对于这种情况，可以考虑把标签移到描述内容中，或把它修改得更简短。
+// 
+[banana peeler factory factory][apple picking service] Assemble a fruit basket.
+```
+
+### 自动生成的 CL 描述 <a id="generated_cl_descriptions"></a>
+
+有些 CL 是有工具自动生成的。如果可能的话，它们的描述也应遵循此处的建议。也就是说，它的第一行应该简短、重点突出、独立的，并且 CL 描述正文应该包含信息丰富的细节，以帮助审核者和未来的代码搜索者了解每个 CL 的功能或作用。
+
 
 ## 提交 CL 之前审核描述 {#review_before_submit}
 

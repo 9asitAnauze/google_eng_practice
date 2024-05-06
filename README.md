@@ -1,11 +1,11 @@
-# Google的工程实践文档
+# Google工程实践文档
 
-Google有很多优秀的工程实践，这些实践遍布公司内的所有项目，覆盖了几乎所有编程语言。 随着开发项目的增多，我们不断总结经验，把这些最佳实践以文档的形式整理出来。这份文档是我们集体经验的结晶。除了我们之外，相信其他公司、组织或开源项目也能从中受益，现在时机成熟了，我们决定将其公开发布。
+Google有很多优秀的工程实践，这些实践遍布公司内的所有项目，覆盖了几乎所有编程语言。 随着开发项目的增多，我们不断总结经验，把这些最佳实践以文档的形式整理出来。现在文档日趋成熟，我们决定将其公开发布，让其他公司、组织或开源项目也能从中受益。
 
 这份工程实践文档内容如下：
-*   [Google的代码审核指南 (Google's Code Review Guidelines)](review/index.md)，它包含两部分：
-    *   [代码审核者指南 (The Code Reviewer's Guide)](review/reviewer/index.md)
-    *   [代码提交者指南 (The Change Author's Guide)](review/developer/index.md)
+*   [Google代码审核指南](review/index.md)，它包含两部分：
+    *   [代码审核者指南](review/reviewer/index.md)
+    *   [代码提交者指南](review/developer/index.md)
 
 ## 术语
 
@@ -25,16 +25,17 @@ Google有很多优秀的工程实践，这些实践遍布公司内的所有项�
 | 1.0 | 2019.10.07 | 初版完成 |
 | 1.1 | 2019.10.18 | 修复某些翻译不准确的地方 |
 | 1.2 | 2020.01.02 | 修改语句不通顺、翻译用词不一致的地方 |
+| 1.3 | 2024.04.26 | 基于英文版的最新内容，更新中文版 |
 
 中文版同时发布于网站：
-*   [Google的工程实践文档(Github)](https://zijinshi.github.io/google_eng_practice/index)
-*   [Google的工程实践文档(Gitbook)](https://zijinshi.gitbook.io/google)
+*   [Google工程实践文档(Github)](https://zijinshi.github.io/google_eng_practice/index)
+*   [Google工程实践文档(Gitbook)](https://zijinshi.gitbook.io/google)
 
 视频学习：
-*   [Google的工程实践文档导读](https://edu.csdn.net/course/detail/26718)
+*   [Google工程实践文档导读](https://edu.csdn.net/course/detail/26718)
 
 PDF版本下载：
-*   [Google的工程实践文档](https://github.com/zijinshi/google_eng_practice/raw/gitbook/Google%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%96%87%E6%A1%A3.pdf)
+*   [Google工程实践文档](https://github.com/zijinshi/google_eng_practice/raw/gitbook/Google%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%96%87%E6%A1%A3.pdf)
 
 [Google代码实践的一些感悟](preface.md)
 
